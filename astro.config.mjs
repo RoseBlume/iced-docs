@@ -6,17 +6,26 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: {
-				github: 'https://github.com/withastro/starlight',
+			title: 'Iced',
+			logo: {
+				dark: './public/resources/logo.svg',
+				light: './public/resources/logo.svg',
+				replacesTitle: false,
 			},
+			social: {
+				github: 'https://github.com/iced-rs/iced',
+				discord: 'https://discord.gg/3xZJ65GAhd',
+				discourse: 'https://discourse.iced.rs',
+			},
+			customCss: ['./src/styles/custom.scss'],
 			sidebar: [
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
+					label: 'Getting Started',
+					autogenerate: { directory: 'getting-started' }
+				},
+				{
+					label: 'Core Concepts',
+					autogenerate: { directory: 'core-concepts' }
 				},
 				{
 					label: 'Reference',

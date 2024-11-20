@@ -19,6 +19,12 @@ export default defineConfig({
 				discord: 'https://discord.gg/3xZJ65GAhd',
 				discourse: 'https://discourse.iced.rs',
 			},
+			editLink: {
+				baseUrl:
+				  process.env.NODE_ENV === 'development'
+					? `vscode://file/${path.dirname(fileURLToPath(import.meta.url))}`
+					: 'https://github.com/tauri-apps/tauri-docs/edit/v2',
+			  },
 			customCss: ['./src/styles/custom.scss'],
 			sidebar: [
 				{

@@ -25,7 +25,6 @@ export default defineConfig({
 					? `vscode://file/${path.dirname(fileURLToPath(import.meta.url))}`
 					: 'https://github.com/tauri-apps/tauri-docs/edit/v2',
 			  },
-			customCss: ['./src/styles/custom.scss'],
 			sidebar: [
 				{
 					label: 'Getting Started',

@@ -6,13 +6,12 @@ import path from 'path';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://roseblume.github.io/iced-docs',
-    base: 'iced-docs',
 	integrations: [
 		starlight({
 			title: 'Iced',
 			logo: {
-				dark: './public/resources/logo.svg',
-				light: './public/resources/logo.svg',
+				dark: './src/assets/logo.svg',
+				light: './src/assets/logo.svg',
 				replacesTitle: false,
 			},
 			social: {
@@ -20,12 +19,6 @@ export default defineConfig({
 				discord: 'https://discord.gg/3xZJ65GAhd',
 				discourse: 'https://discourse.iced.rs',
 			},
-			editLink: {
-				baseUrl:
-				  process.env.NODE_ENV === 'development'
-					? `vscode://file/${path.dirname(fileURLToPath(import.meta.url))}`
-					: 'https://github.com/tauri-apps/tauri-docs/edit/v2',
-			  },
 			customCss: ['./src/styles/custom.scss'],
 			sidebar: [
 				{

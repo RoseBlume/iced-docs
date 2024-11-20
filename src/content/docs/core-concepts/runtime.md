@@ -1,9 +1,6 @@
 ---
 title: The Runtime
 sidebar:
-  badge: 
-    text: 'WIP'
-    variant: 'caution'
   order: 1
 ---
 In the previous chapter we built the classical counter interface using iced and The Elm Architecture. We focused on each
@@ -20,7 +17,7 @@ interface takes place. The runtime is in charge of every part of the loop: initi
 producing __messages__, executing the __update logic__, and running our __view logic__.
 
 <div align="center">
-  <img alt="The Runtime" src="/resources/the-runtime.svg">
+  <img alt="The Runtime" src="/iced-docs/resources/the-runtime.svg">
 </div>
 
 > Another way to picture the runtime is by imagining a huge engine with four fundamental parts missing. Our job is

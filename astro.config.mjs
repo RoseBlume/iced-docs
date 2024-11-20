@@ -6,6 +6,7 @@ import path from 'path';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://roseblume.github.io/iced-docs',
+	base: 'iced-docs',
 	integrations: [
 		starlight({
 			title: 'Iced',

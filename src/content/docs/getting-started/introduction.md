@@ -5,7 +5,7 @@ sidebar:
 ---
 
 <div align="center">
-  <img alt="The iced logo" src="/resources/logo.svg" width="140">
+  <img alt="The iced logo" src="/iced-docs/resources/logo.svg" width="140">
 </div>
 
 [Iced] is a cross-platform GUI library for [Rust]. It is inspired by [Elm], a delightful functional language for building web applications.

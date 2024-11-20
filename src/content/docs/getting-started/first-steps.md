@@ -14,7 +14,7 @@ In the previous chapter, we dissected and studied the classical counter interfac
 build it in Rust while leveraging The Elm Architecture.
 
 <div align="center">
-  <img alt="A classical counter interface" src="/resources/counter-interface-annotated.svg">
+  <img alt="A classical counter interface" src="/iced-docs/resources/counter-interface-annotated.svg">
 </div>
 
 ## State
@@ -141,7 +141,7 @@ Here is where the magic happens! In view logic, we bring together the state of t
 to produce a visual representation of the user interface that must be displayed to the user.
 
 <div align="center" class="right">
-  <img alt="A classical counter interface" src="/resources/counter-interface.svg" width="50%">
+  <img alt="A classical counter interface" src="/iced-docs/resources/counter-interface.svg" width="50%">
 </div>
 
 As we have already learned, this visual representation is made of widgets—the visibly distinct units of an interface. Most
@@ -349,7 +349,7 @@ And well... That's it! Our view logic is done! But wait... It's a bit verbose ri
 let's just inline everything:
 
 <div align="center" class="right">
-  <img alt="A classical counter interface" src="/resources/counter-interface.svg" width="50%">
+  <img alt="A classical counter interface" src="/iced-docs/resources/counter-interface.svg" width="50%">
 </div>
 
 ```rust,ignore
